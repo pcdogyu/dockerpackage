@@ -1,0 +1,210 @@
+managed-keys-zone: journal file is out of date: removing journal file
+managed-keys-zone: loaded serial 2
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+zone localhost.localdomain/IN: loaded serial 0
+all zones loaded
+running
+network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+network unreachable resolving './NS/IN': 2001:500:200::b#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+network unreachable resolving './NS/IN': 2001:500:2d::d#53
+network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+network unreachable resolving './NS/IN': 2001:500:9f::42#53
+network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+network unreachable resolving './NS/IN': 2001:7fe::53#53
+network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+network unreachable resolving './NS/IN': 2001:dc3::35#53
+network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+network unreachable resolving './NS/IN': 2001:500:a8::e#53
+network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+network unreachable resolving './NS/IN': 2001:500:1::53#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+network unreachable resolving './NS/IN': 2001:500:2::c#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+network unreachable resolving './NS/IN': 2001:500:2f::f#53
+network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+network unreachable resolving './NS/IN': 2001:7fd::1#53
+managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+resolver priming query complete
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on ::1#53
+exiting
+managed-keys-zone: journal file is out of date: removing journal file
+managed-keys-zone: loaded serial 3
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+zone localhost.localdomain/IN: loaded serial 0
+all zones loaded
+running
+network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+network unreachable resolving './NS/IN': 2001:500:a8::e#53
+network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+network unreachable resolving './NS/IN': 2001:dc3::35#53
+network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+network unreachable resolving './NS/IN': 2001:500:200::b#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+network unreachable resolving './NS/IN': 2001:500:2f::f#53
+network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+network unreachable resolving './NS/IN': 2001:500:1::53#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+network unreachable resolving './NS/IN': 2001:500:2::c#53
+network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+network unreachable resolving './NS/IN': 2001:7fd::1#53
+network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+network unreachable resolving './NS/IN': 2001:500:9f::42#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+network unreachable resolving './NS/IN': 2001:500:2d::d#53
+network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+network unreachable resolving './NS/IN': 2001:7fe::53#53
+managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+resolver priming query complete
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:c27::2:30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:12::d0d#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:9f::42#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:2f::f#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:2d::d#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:1::53#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:a8::e#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:200::b#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:7fd::1#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:2::c#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:7fe::53#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:dc3::35#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:eea3::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:502:7094::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:231d::2:30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:a83e::2:30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:856e::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:39c1::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:502:1ca1::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:502:8cc::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:501:b1f9::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:d414::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:d2d::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:503:83eb::30#53
+network unreachable resolving 'invalid.parrotdns.com/A/IN': 2001:500:d937::30#53
+network unreachable resolving 'parrotdns.com/DS/IN': 2001:502:7094::30#53
+network unreachable resolving 'parrotdns.com/DS/IN': 2001:503:d2d::30#53
+network unreachable resolving 'parrotdns.com/DS/IN': 2001:503:eea3::30#53
+network unreachable resolving 'parrotdns.com/DS/IN': 2001:503:d414::30#53
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on 173.82.151.187#53
+no longer listening on ::1#53
+exiting
+managed-keys-zone: journal file is out of date: removing journal file
+managed-keys-zone: loaded serial 4
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+all zones loaded
+running
+network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+network unreachable resolving './NS/IN': 2001:7fe::53#53
+network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+network unreachable resolving './NS/IN': 2001:dc3::35#53
+network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+network unreachable resolving './NS/IN': 2001:500:200::b#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+network unreachable resolving './NS/IN': 2001:500:2::c#53
+network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+network unreachable resolving './NS/IN': 2001:500:2f::f#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+network unreachable resolving './NS/IN': 2001:500:2d::d#53
+network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+network unreachable resolving './NS/IN': 2001:500:1::53#53
+network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+network unreachable resolving './NS/IN': 2001:7fd::1#53
+network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+network unreachable resolving './NS/IN': 2001:500:9f::42#53
+network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+network unreachable resolving './NS/IN': 2001:500:a8::e#53
+managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+resolver priming query complete
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on 173.82.151.187#53
+no longer listening on ::1#53
+exiting
+managed-keys-zone: journal file is out of date: removing journal file
+managed-keys-zone: loaded serial 5
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone localhost.localdomain/IN: loaded serial 0
+zone caelab.top/IN: loaded serial 2020111601
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+all zones loaded
+running
+network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+network unreachable resolving './NS/IN': 2001:7fe::53#53
+network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+network unreachable resolving './NS/IN': 2001:7fd::1#53
+network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+network unreachable resolving './NS/IN': 2001:500:2d::d#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+network unreachable resolving './NS/IN': 2001:500:2f::f#53
+network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+network unreachable resolving './NS/IN': 2001:dc3::35#53
+network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+network unreachable resolving './NS/IN': 2001:500:200::b#53
+network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+network unreachable resolving './NS/IN': 2001:500:9f::42#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+network unreachable resolving './NS/IN': 2001:500:2::c#53
+network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+network unreachable resolving './NS/IN': 2001:500:a8::e#53
+network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+network unreachable resolving './NS/IN': 2001:500:1::53#53
+managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+resolver priming query complete
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on 173.82.151.187#53
+no longer listening on ::1#53
+exiting

@@ -1,0 +1,45 @@
+managed-keys-zone: loaded serial 0
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+all zones loaded
+running
+network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+network unreachable resolving './NS/IN': 2001:500:a8::e#53
+network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+network unreachable resolving './NS/IN': 2001:500:2d::d#53
+network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+network unreachable resolving './NS/IN': 2001:7fd::1#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+network unreachable resolving './NS/IN': 2001:500:2::c#53
+network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+network unreachable resolving './NS/IN': 2001:7fe::53#53
+network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+network unreachable resolving './NS/IN': 2001:500:9f::42#53
+network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+network unreachable resolving './NS/IN': 2001:dc3::35#53
+network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+network unreachable resolving './NS/IN': 2001:500:200::b#53
+network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+network unreachable resolving './NS/IN': 2001:500:1::53#53
+network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+network unreachable resolving './NS/IN': 2001:500:2f::f#53
+network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+resolver priming query complete
+client @0x7f1deaebd050 127.0.0.1#36225: update failed: not authoritative for update zone (NOTAUTH)
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on ::1#53
+exiting

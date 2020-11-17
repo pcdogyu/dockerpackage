@@ -1,0 +1,5 @@
+$ORIGIN caelab.top.
+$TTL 3M
+@ IN SOA ns1.caelab.top. hostmaster.caelab.top. i2020111601 3M 3M 3M 3M
+IN NS ns1.caelab.top.
+ns1 IN A 173.82.151.187
