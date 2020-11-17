@@ -1,6 +1,0 @@
-FROM centos 
-RUN yum update 
-RUN yum install apache2 
-RUN yum install apache2-utils 
-RUN yum clean 
-EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]
