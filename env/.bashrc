@@ -19,4 +19,4 @@
 alias ll='ls -lrth'
 alias di='docker images'
 alias dp='docker ps'
-alias dpa='docker pa a'
+alias dpa='docker ps -a'
