@@ -30,4 +30,6 @@ RUN     cd nginx-${NGINX_VERSION} \
 
 STOPSIGNAL SIGTERM
 
-CMD ["/bin/bash" ]
+#ENTRYPOINT ["nginx"]
+
+#CMD ["/bin/bash" ]

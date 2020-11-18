@@ -19,21 +19,22 @@ VOLUME /data
 ENV BIND_USER=named \
     DATA_DIR=/data
 
-COPY files/named.conf /etc/named.conf
-COPY files/named-hidden-master.conf /etc/named-hidden-master.conf
-COPY files/named-hidden-master-slave.conf /etc/named-hidden-master-slave.conf
-COPY files/acl.conf /etc/named.d/acl.conf
+#COPY named.conf /etc/named.conf
+#COPY named-hidden-master.conf /etc/named-hidden-master.conf
+#COPY named-hidden-master-slave.conf /etc/named-hidden-master-slave.conf
+#COPY files/acl.conf /etc/named.d/acl.conf
 
 # Needed for proxy and cleanup scripts
-COPY files/proxy/dns_proxy.py /scripts/
-COPY files/proxy/dns_cleanup.py /scripts/
-COPY files/proxy/lib/*  /scripts/lib/
+#COPY files/proxy/dns_proxy.py /scripts/
+#COPY files/proxy/dns_cleanup.py /scripts/
+#COPY files/proxy/lib/*  /scripts/lib/
 
 #RUN sed -i -e "s/instance_network_ip/$LISTEN_IP/g" /etc/named.conf
 
 COPY entrypoint.sh /sbin/entrypoint.sh
 
-RUN chmod 755 /sbin/entrypoint.sh /scripts/dns_cleanup.py /scripts/dns_proxy.py
+RUN chmod 755 /sbin/entrypoint.sh 
+#RUN chmod 755 /sbin/entrypoint.sh /scripts/dns_cleanup.py /scripts/dns_proxy.py
 
 EXPOSE 53/udp 53/tcp
 
