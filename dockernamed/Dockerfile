@@ -1,5 +1,5 @@
 FROM opensuse/leap
-MAINTAINER Hao.yu01@sap.com - lastupdate 2020.11.17
+MAINTAINER Hao.yu01@sap.com - lastupdate 2020.11.18
 
 #COPY repos/*.repo /etc/zypp/repos.d/
 

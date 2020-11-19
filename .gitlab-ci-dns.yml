@@ -1,0 +1,108 @@
+# BUILD
+---
+build:dns:
+  extends: .build
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+# TEST
+test:dns:
+  extends: .test
+  needs: ["build:dns"]
+  variables:
+    SERVICE: 'dns'
+  script:
+    - docker run -d -v ${CONTAINER_NAME}:/data -p 53 --name ${CONTAINER_NAME} ${IMAGE_NAME}
+    - docker port ${CONTAINER_NAME} | grep '53/tcp' | cut -d ":" -f 2
+    - CONTAINER_IP=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ${CONTAINER_NAME})
+    - nslookup 8.8.8.8 $CONTAINER_IP
+  only:
+    changes:
+      - docker/dns/**/*
+
+# PUSH
+push:dns:latest:GCR:
+  extends: .push_gcr
+  needs: ["test:dns"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+push:dns:latest:AWS:
+  extends: .push_aws
+  needs: ["test:dns"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+push:dns:latest:AZR:
+  extends: .push_azr
+  needs: ["test:dns"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+push:dns:latest:ACS:
+  extends: .push_acs
+  needs: ["test:dns"]
+  variables:
+    SERVICE: "dns"
+  only:
+    changes:
+      - docker/dns/**/*
+
+# CLEANUP
+remove:dns:tags:local:
+  extends: .cleanup_local
+  variables:
+    SERVICE: 'dns'
+  after_script:
+    - docker stop "oasis_dns-${CI_PIPELINE_ID}" || true && docker rm "oasis_dns-${CI_PIPELINE_ID}" || true
+  only:
+    changes:
+      - docker/dns/**/*
+
+remove:dns:tags:GCR:
+  extends: .cleanup_gcr
+  needs: ["push:dns:latest:GCR"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+remove:dns:tags:AWS:
+  extends: .cleanup_aws
+  needs: ["push:dns:latest:AWS"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+remove:dns:tags:AZR:
+  extends: .cleanup_azr
+  needs: ["push:dns:latest:AZR"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*
+
+remove:dns:tags:ACS:
+  extends: .cleanup_acs
+  needs: ["push:dns:latest:ACS"]
+  variables:
+    SERVICE: 'dns'
+  only:
+    changes:
+      - docker/dns/**/*

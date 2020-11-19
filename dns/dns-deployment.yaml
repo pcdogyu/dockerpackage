@@ -1,0 +1,65 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dns
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dns
+  namespace: dns
+  labels:
+    app: dns
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dns
+  template:
+    metadata:
+      labels:
+        app: dns
+    spec:
+      volumes:
+        - name: dns-data
+          emptyDir: {}
+      containers:
+        - name: dns
+          image: gcr.io/sap-anthos-poc/dns:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 53
+              protocol: TCP
+            - containerPort: 53
+              protocol: UDP
+            - containerPort: 8086
+          resources:
+            limits:
+              cpu: 100m
+              memory: 100Mi
+          volumeMounts:
+            - name: dns-data
+              mountPath: /data
+        - name: oasis
+          image: gcr.io/sap-anthos-poc/oasis:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              cpu: 100m
+              memory: 100Mi
+          volumeMounts:
+            - name: dns-data
+              mountPath: /data
+      # TODO
+      # affinity:
+      #   podAntiAffinity:
+      #     requiredDuringSchedulingIgnoredDuringExecution:
+      #     - labelSelector:
+      #         matchExpressions:
+      #         - key: app
+      #           operator: In
+      #           values:
+      #           - dns
+      #       topologyKey: failure-domain.beta.kubernetes.io/zone
