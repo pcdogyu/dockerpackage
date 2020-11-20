@@ -1,14 +1,15 @@
-FROM docker.wdf.sap.corp:50001/suse/sle15:latest
+#FROM docker.wdf.sap.corp:50001/suse/sle15:latest
+FROM opensuse/leap
 
 MAINTAINER tpatzig
 
 #ARG LISTEN_IP
 #ARG NAME
 
-COPY repos/*.repo /etc/zypp/repos.d/
+#COPY repos/*.repo /etc/zypp/repos.d/
 
-RUN rpm -e container-suseconnect \
-  && zypper --gpg-auto-import-keys ref \
+#RUN rpm -e container-suseconnect \
+RUN zypper --gpg-auto-import-keys ref \
   && zypper in -y --no-recommends bind bind-utils which \
   && zypper in -y --no-recommends net-tools-deprecated iputils telnet vim \
   && zypper in -y --no-recommends python3 python3-pip \

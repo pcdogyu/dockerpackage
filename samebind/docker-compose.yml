@@ -1,0 +1,45 @@
+version: "3.5"
+services:
+  dns-master:
+    image: sameersbn/bind
+    environment:
+      - DNS_FORWARDER=8.8.8.8
+      - hidden_master=true
+      - bind_mode=master
+      - myMasterService=dns-master
+      - mySlaveService=dns-slave
+      - myMasterKey=/var/lib/named/etc/bind/rndc.key
+      - mySlaveKey=/keys/rndc-slave.key
+      - nzfFile=/var/lib/named/_default.nzf
+      - multicastIP=173.82.151.187
+    ports:
+      - "1153:53/tcp"
+      - "1153:53/udp"
+      - "953:953/tcp"
+      - "10000:10000/tcp"
+    volumes:
+      - /opt/bind:/data
+    deploy:
+        replicas: 1
+
+  dns-slave:
+    image: sameersbn/bind
+    environment:
+      - DNS_FORWARDER=8.8.8.8
+      - hidden_master=true
+      - bind_mode=slave
+      - myMasterService=dns-master
+      - mySlaveService=dns-slave
+      - myMasterKey=/var/lib/named/etc/bind/rndc.key
+      - mySlaveKey=/keys/rndc-slave.key
+      - nzfFile=/var/lib/named/_default.nzf
+      - multicastIP=173.82.151.187
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - /opt/bind/dns-keys:/keys
+    depends_on:
+      - "dns-master"
+    deploy:
+        replicas: 1
