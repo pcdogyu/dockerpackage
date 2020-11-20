@@ -5,5 +5,7 @@ RUN zypper up
 RUN zypper install -y bind bind-utils bind-doc
 RUN zypper install -y vim which iputils telnet net-tools-deprecated
 EXPOSE 53
-CMD ["/usr/sbin/named"]
+
+ENTRYPOINT ["/usr/sbin/named"]
+CMD ["/bin/bash"]
 
