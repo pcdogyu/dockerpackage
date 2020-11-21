@@ -1,0 +1,15 @@
+$TTL 300
+caelab.local.	IN	SOA	ns1.caelab.local. hao\.yu01.sap.com. (
+			2020112022
+			300
+			300
+			300
+			300 )
+caelab.local.		300	IN	NS	ns1.caelab.local.
+www.caelab.local.	300	IN	A	192.168.57.1
+web.caelab.local.	300	IN	CNAME	www
+caelab.local.		300	IN	NS	ns2.caelab.local.
+ns2.caelab.local.	300	IN	A	192.168.57.4
+ns1.caelab.local.	300	IN	A	192.168.57.3
+mail.caelab.local	300	IN	A	192.168.57.6
+pop.caelab.local	300	IN	A	192.168.57.7
